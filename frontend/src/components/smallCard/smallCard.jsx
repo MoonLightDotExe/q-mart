@@ -1,44 +1,28 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
-import data from '../../data/smallcard.json'
+
 
 import './smallCard.css'
 
+import Data from '../../data/smallcard.json'
 
-
-
-
-function smallCard() {
-
-
-    const [images, setImages] = useState([]);
-    const [texts, setTexts] = useState({});
-
-    useEffect(() => {
-        setImages(data.images);
-    }, []);
-
-    useEffect(() => {
-        setTexts(data.texts);
-    }, []);
-
-
-
+const smallCard = () => {
     return (
-        <>
-            <div className="small-image">
-                {images.map(image => (
-                    <img key={image.id} src={image.place} alt="" />
-                ))}
-            </div>
-            {texts.map(text => (
-                <h1 className='small-text'>
-                    {text.text}
-                </h1>
-            ))}
-        </>
-    )
+        <div className='smallcard-container'>
+            {Data.map(post => (
+                <div key={post.id} className='smallcard'>
+                    <img src={post.place} alt="" className='small-image' />
 
+                    <h1 className='small-text'>
+                        {post.text}
+                    </h1>
+
+                </div>
+
+            ))
+            }
+        </div>
+    )
 
 }
 

@@ -1,4 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&display=swap');
+
 .smallcard-container {
-  border: 1px solid black;
-  width: 30rem;
+  width: 31.5rem;
+  height: 34.5rem;
+  /* display: flex;
+  align-items: center;
+  gap: 10rem;*/
+}
+
+.smallcard {
+  width: 31.5rem;
+  height: 34.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.small-image {
+  margin: 1rem;
+  width: 29.5rem;
+  height: 29.5rem;
+}
+
+.small-text {
+  margin-top: 0;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
 }

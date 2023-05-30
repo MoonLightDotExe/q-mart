@@ -1,24 +1,23 @@
-{
-    "smalldata":[
+
+[
         {
             "id":1,
-            "place":"https://unsplash.com/photos/iUvQRvdIhsY",
-            "text":"Small Shoulder Bag"
+            "place":"assets/bag1.avif",
+            "text":"Text one of Carousel"
         },
         {
             "id": 2,
-            "place":"https://unsplash.com/photos/KKZhQk3j0yA",
-            "text":"Tote Bag"
+            "place":"assets/bag2.avif",
+            "text":"Text two of Carousel"
         },
         {
             "id": 3,
-            "place":"https://unsplash.com/photos/ZmeFtu11Hpc",
-            "text":"Tote Bag"
+            "place":"assets/bag3.avif",
+            "text":"Text three of Carousel"
         },
         {
             "id": 4,
-            "place":"https://unsplash.com/photos/QWIJ50qBAJ8",
-            "text":"Tote Bag"
+            "place":"assets/bag4.avif",
+            "text":"Text four of Carousel"
         }
     ]
-}
