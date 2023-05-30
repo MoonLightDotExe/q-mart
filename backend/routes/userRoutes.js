@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
+const protect = require('../middleware/authMiddleware')
+
 const {
   registerController,
   loginController,
@@ -8,6 +10,6 @@ const {
 
 router.post('/register', registerController)
 
-router.post('/login', loginController)
+router.post('/login', protect, loginController)
 
 module.exports = router
