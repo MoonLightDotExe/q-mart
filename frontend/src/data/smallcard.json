@@ -1,0 +1,23 @@
+
+[
+        {
+            "id":1,
+            "place":"assets/bag1.avif",
+            "text":"Text one of Carousel"
+        },
+        {
+            "id": 2,
+            "place":"assets/bag2.avif",
+            "text":"Text two of Carousel"
+        },
+        {
+            "id": 3,
+            "place":"assets/bag3.avif",
+            "text":"Text three of Carousel"
+        },
+        {
+            "id": 4,
+            "place":"assets/bag4.avif",
+            "text":"Text four of Carousel"
+        }
+    ]
