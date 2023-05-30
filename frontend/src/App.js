@@ -1,9 +1,3 @@
-// import React from 'react'
-import React, { useRef } from 'react';
-import Login from './pages/Login/Login'
-import Register from './pages/Register/Register'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
 import './App.css'
 
 function App() {
@@ -12,7 +6,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" Component={Login} element={<Login />} />
-          <Route path="/register" Component={Register} element={<Register />} />
+          <Route path="/register" Component={Login} element={<Register />} />
         </Routes>
       </Router>
     </div>
@@ -20,5 +14,3 @@ function App() {
 }
 
 export default App
-
-// npm run client when in q-mart 
