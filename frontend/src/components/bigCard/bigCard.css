@@ -1,0 +1,65 @@
+.bigcard-container {
+  /* border: 1px solid black; */
+  width: 46rem;
+  height: 61rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.big-image {
+  background-image: url('https://i.pinimg.com/564x/6e/8f/92/6e8f9246d74276ce7d2efd419de60d74.jpg');
+  width: 46rem;
+  height: 61rem;
+  background-size: 100%;
+  background-position: center center;
+  position: absolute;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.big-image:hover {
+  background-size: 130%;
+  /* transform: scale(1.2); */
+}
+
+.bigcard-bottom {
+  /* border: 1px solid black; */
+  width: fit-content;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  margin: 47rem 0 0 9rem;
+  color: #fff;
+
+  position: relative;
+  bottom: 0;
+  position: sticky;
+
+  /* overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70vh; */
+}
+
+.bigcard-btn {
+  width: 12rem;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp {
+  height: 70vh;
+  position: relative;
+}
