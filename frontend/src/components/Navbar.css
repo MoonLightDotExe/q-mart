@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    padding-top: 10px;
+    text-align: center;
+    position: static;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    /* box-shadow:  0 4px 8px 0 ; */
+}
+.menu{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.menu li {
+    margin-right: 25px;
+    position: static;
+}
+.Nav{
+    padding-left: 150px;
+    position: static;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    letter-spacing: .5rem;
+    font-size: 30px;
+
+  }
+  .contact{
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  .contact::after{
+    content: "";
+     position: absolute;
+     left: 0;
+     bottom: -2px;
+     width: 100%;
+     height: 2px;
+     background-color: #000;
+     transform: scaleX(0);
+     transform-origin: left center;
+     transition: transform 0.3s;
+     }
+     .contact:hover {
+       transform: translateY(-2px);
+     }
+     
+     .contact:hover::after {
+       animation: underline-hide 2s forwards;
+     }
+     
+     @keyframes underline-hide {
+       0% {
+         transform: scaleX(1);
+       }
+       100% {
+         transform: scaleX(0);
+       }
+     }
