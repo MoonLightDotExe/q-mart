@@ -16,9 +16,13 @@
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.1",
+
+    "react-icons": "^4.9.0"
+
     "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
+
   }
 }

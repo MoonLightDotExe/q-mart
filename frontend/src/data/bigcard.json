@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "place":"assets/gucci1",
+        "text":"Gucci Summer Season",
+        "button":"I am Button"
+    },
+    {
+        "id":2,
+        "place":"assets/gucci2",
+        "text":"Gucci Summer Season",
+        "button":"I am Button"
+    }
+]
