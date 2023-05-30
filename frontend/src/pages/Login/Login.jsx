@@ -1,5 +1,6 @@
 import './Login.css'
 import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from 'react-router-dom';
 
 import React from 'react'
 
@@ -37,9 +38,12 @@ function Login() {
         <br/>
         <button className='login-page__submit' type="submit">CONTINUE</button>
 
+        <span className='login-page__text3'> Not a member? <Link to='/register' className='login-page__direct'> Register now </Link> </span>
+
       </form>
     </div>
   )
 }
+
 
 export default Login

@@ -61,7 +61,8 @@
     color: black;
 }
 
-.login-page__text2 {
+.login-page__text2,
+.login-page__text3 {
     color: black;
     letter-spacing: .3px;
     text-align: center;
@@ -90,6 +91,16 @@
     font-size: 1.4rem;
     line-height: 1.3rem;
     margin-top: .5rem;
+}
+
+.login-page__direct {
+    text-decoration: none;
+    color: #416d99;
+}
+
+.login-page__text3 {
+    padding-left: 7rem;
+    font-weight: 600;
 }
 
 /* input[type='text'],
