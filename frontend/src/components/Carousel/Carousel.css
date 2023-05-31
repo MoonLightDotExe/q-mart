@@ -1,0 +1,12 @@
+.carousel-container {
+  /* width: 100vw;
+
+  height: 100vh;
+  background-color: red; */
+}
+
+.carousel {
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+}
