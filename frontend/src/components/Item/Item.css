@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat&family=Pacifico&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.title{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+}
