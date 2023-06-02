@@ -1,8 +1,8 @@
-import './Login.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
-
 import React, {useState} from 'react'
+
+import './Login.css'
 
 function Login() {
     const[text,setText] = useState();
@@ -20,7 +20,7 @@ function Login() {
       }
       else if (text !== '' && e.target.value.length<=10){
         setDisable(true);
-        setMessage('Email must atleast be 10 characters long')
+        setMessage('Please enter a valid email address')
       }
       else {
         setDisable(false);
@@ -84,7 +84,7 @@ function Login() {
               onChange={handleChange}
               required
             />
-            {disable && message}
+            {disable && <div className='login-red'>{message}</div>}
 
             {/* <label for="pswrd">Your password</label> */}
             <input 
@@ -96,7 +96,7 @@ function Login() {
               onChange={handleDone} 
               required
               />
-              {disable1 && message1}
+              {disable1 && <div className='login-red1'>{message1}</div>}
         </div>
         <br/>
         <button className='login-page__submit' type="submit">CONTINUE</button>
