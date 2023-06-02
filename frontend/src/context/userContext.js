@@ -3,6 +3,8 @@ import { createContext, useState } from 'react'
 const userContext = createContext()
 
 export const UserProvider = ({ children }) => {
+  const [sidebar, setSidebar] = useState(false)
+
   const registerUser = async (name, email, pass) => {
     if (!name || !email || !pass) {
       console.log('ERROR')
@@ -43,7 +45,9 @@ export const UserProvider = ({ children }) => {
   }
 
   return (
-    <userContext.Provider value={{ registerUser, loginUser }}>
+    <userContext.Provider
+      value={{ registerUser, loginUser, sidebar, setSidebar }}
+    >
       {children}
     </userContext.Provider>
   )

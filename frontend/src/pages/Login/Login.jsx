@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react'
+import { useState, useContext } from 'react'
 
 import userContext from '../../context/userContext'
 
@@ -9,11 +9,7 @@ function Login() {
   const [disable, setDisable] = useState(false)
   const [message, setMessage] = useState('')
 
-  const { loginUser } = useContext(userContext)
-
-  useEffect(() => {
-    loginUser('ompamonkar@gmail.com1', '123456')
-  }, [])
+  const { sidebar } = useContext(userContext)
 
   const handleChange = (e) => {
     if (text === '') {
@@ -29,7 +25,7 @@ function Login() {
   }
 
   return (
-    <div className='login-page'>
+    <div className={`login-page ${sidebar ? `blur` : ``}`}>
       <span className='login-page__header'>
         <h1>MY Q-MART ACCOUNT</h1>
       </span>

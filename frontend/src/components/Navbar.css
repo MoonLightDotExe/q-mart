@@ -70,3 +70,52 @@
   position: fixed;
   width: 100%;
 }
+
+.blur {
+  filter: blur(1rem);
+  transition: all 1s;
+  opacity: 1;
+}
+.sidebar_toggle {
+  background-color: antiquewhite;
+  border: 0;
+}
+.sidebar {
+  top: 0;
+  right: 0;
+  width: 25vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  transition: width 0.8s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+}
+
+.sidebar.active {
+  width: 25vw;
+}
+
+.sidebar.inactive {
+  width: 0;
+}
+
+.inner {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  padding-top: 10rem;
+  padding-left: 3rem;
+  letter-spacing: 0.3rem;
+}
