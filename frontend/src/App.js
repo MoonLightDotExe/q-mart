@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useContext } from 'react'
 
@@ -12,6 +13,7 @@ import './App.css'
 import React from 'react'
 
 function App() {
+
   return (
     <Router>
       <Navbar />
