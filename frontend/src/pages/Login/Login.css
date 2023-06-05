@@ -92,6 +92,23 @@
   margin-top: 0.5rem;
 }
 
+.disable:focus {
+  border: 2.3px solid black;
+  outline: none !important;
+  box-shadow: #000000;
+}
+
+.disable {
+  border: 2.3px solid red;
+  outline: none !important;
+}
+
+.login-red,
+.login-red1 {
+  color: red !important;
+  margin-left: 2rem;
+}
+
 .disable {
   outline: none !important;
   border: 2.3px solid red;

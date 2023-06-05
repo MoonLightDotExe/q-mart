@@ -1,4 +1,5 @@
 import { useState, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import userContext from '../../context/userContext'
 
@@ -9,9 +10,15 @@ function Login() {
   const [disable, setDisable] = useState(false)
   const [message, setMessage] = useState('')
 
-  const { sidebar } = useContext(userContext)
+  const navigate = useNavigate()
 
-  const handleChange = (e) => {
+  const [pass, setPass] = useState()
+  const [disable1, setDisable1] = useState(false)
+  const [message1, setMessage1] = useState('')
+
+  const { sidebar, loginUser, success } = useContext(userContext)
+
+  const handleEmail = (e) => {
     if (text === '') {
       setDisable(false)
     }
@@ -21,6 +28,31 @@ function Login() {
     } else {
       setDisable(false)
       setMessage()
+    }
+    setText(e.target.value)
+  }
+
+  const handlePass = (e) => {
+    if (pass === '') {
+      setDisable1(false)
+    }
+    if (e.target.value.length <= 10) {
+      setDisable1(true)
+      setMessage1('Password must be at least 10 characters long')
+    } else {
+      setDisable1(false)
+      setMessage1()
+    }
+    setPass(e.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    loginUser(text, pass)
+    if (success) {
+      navigate('/user')
+    } else {
+      navigate('/register')
     }
   }
 
@@ -57,7 +89,7 @@ function Login() {
 
       <span className='login-page__or'>OR</span>
 
-      <form action=''>
+      <form onSubmit={handleSubmit}>
         <div className='headingsContainer'>
           <h3 className='login-page__text1'>
             CONTINUE WITH YOUR EMAIL ADDRESS
@@ -75,17 +107,20 @@ function Login() {
             placeholder='EMAIL*'
             name='email'
             value={text}
-            onChange={handleChange}
+            onChange={handleEmail}
             required
           />
+          {disable && <div className='login-red'>{message}</div>}
 
           <input
             className='login-page__input2'
             type='password'
             placeholder='PASSWORD*'
             name='pswrd'
+            onChange={handlePass}
             required
           />
+          {disable1 && <div className='login-red1'>{message1}</div>}
         </div>
         <br />
         <button

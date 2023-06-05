@@ -4,6 +4,8 @@ const userContext = createContext()
 
 export const UserProvider = ({ children }) => {
   const [sidebar, setSidebar] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [fail, setFail] = useState(false)
 
   const registerUser = async (name, email, pass) => {
     if (!name || !email || !pass) {
@@ -42,11 +44,20 @@ export const UserProvider = ({ children }) => {
 
     const data = await response.json()
     console.log(data)
+    if (data.message === 'Invalid Credentials') {
+      setSuccess(true)
+    }
   }
 
   return (
     <userContext.Provider
-      value={{ registerUser, loginUser, sidebar, setSidebar }}
+      value={{
+        registerUser,
+        loginUser,
+        sidebar,
+        setSidebar,
+        success,
+      }}
     >
       {children}
     </userContext.Provider>

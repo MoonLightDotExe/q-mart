@@ -1,0 +1,19 @@
+.not-found {
+  font-size: 3rem;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.not-found--head {
+  font-weight: 600;
+}
+
+.not-found--link {
+  color: #000;
+  text-decoration: underline;
+}
