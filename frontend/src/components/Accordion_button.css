@@ -5,34 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     
 }
-.main{
-    padding: 50px 30px;
-}
-.title{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    letter-spacing: -.03em;
-    text-transform: uppercase;
-}
-.Item-Selector{
-    /* height: 887px; */
-    width: 812.5px;
-}
-.Item-Selector-Image{
-    display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-gap: 20px ;
-  /* width: 100%; */
-  
-
-}
-.Item-Selector-Image img{
-    width: 100%;
-    height: auto;
-    size: 100px;
-}
-/* .accordion-button{
+.accordion-button{
     padding: 30px 15px;
    
 }
@@ -57,4 +30,4 @@
     line-height: 16px;
     font-weight: 400;
     letter-spacing: -.03em;
-} */
+}

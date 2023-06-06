@@ -5,6 +5,12 @@ const User = require('../models/userModel')
 
 const registerController = asyncHandler(async (req, res) => {
   const { name, email, password } = req.body
+
+  if (!email || !password || !name) {
+    res.status(400)
+    throw new Error('Please Enter all fields')
+  }
+
   const userExists = await User.findOne({ email })
 
   if (userExists) {

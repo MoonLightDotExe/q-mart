@@ -1,101 +1,98 @@
-
 .login-page {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70rem;
-    width: 47%;
-    margin: auto;
-    padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70rem;
+  width: 47%;
+  margin: auto;
+  padding: 10px;
 }
 
 .login-page__account {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    width: 100%;
-    padding: 0px;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  padding: 0px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 #google-button,
 #apple-button {
-    border: 3.5px solid #414040;
-    width: 100%;
-    line-height: 4.2rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: 600;
-    color: #333333;
-    background-color: white;
-    letter-spacing: 1px;
+  border: 3.5px solid #414040;
+  width: 100%;
+  line-height: 4.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: 600;
+  color: #333333;
+  background-color: white;
+  letter-spacing: 1px;
 }
 
 .login-page__header {
-    color: rgb(1, 1, 1);
-    font-size: xx-large;
-    letter-spacing: .5px;
+  color: rgb(1, 1, 1);
+  font-size: xx-large;
+  letter-spacing: 0.5px;
 }
 
 .apple-img {
-    filter: contrast(0.5);
+  filter: contrast(0.5);
 }
 
 .login-page__or {
-    padding: .6rem;
-    padding-bottom: 3.5rem;
-    color: black;
-    font-size: 1.3rem;
+  padding: 0.6rem;
+  padding-bottom: 3.5rem;
+  color: black;
+  font-size: 1.3rem;
 }
 
 .login-page__text1 {
-    letter-spacing: 1.5px;
-    text-align: center;
-    line-height: 4rem;
-    color: black;
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 4rem;
+  color: black;
 }
 
 .login-page__text2 {
-    color: black;
-    letter-spacing: .3px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-top: 2rem;
-    padding: 2px;
+  color: black;
+  letter-spacing: 0.3px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  padding: 2px;
 }
 
 .login-page__input1,
 .login-page__input2,
 .login-page__submit {
-    padding: 1.6rem;
-    margin: 1.3rem;
-    width: 100%;
-    border: 2.3px solid black;
-    letter-spacing: 2px;
-    font-size: 1.3rem;
+  padding: 1.6rem;
+  margin: 1.3rem;
+  width: 100%;
+  border: 2.3px solid black;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
 }
 
 .login-page__submit {
-    background-color: #000000;
-    color: white;
-    font-weight: 700;
-    letter-spacing: 2.3px;
-    font-size: 1.4rem;
-    line-height: 1.3rem;
-    margin-top: .5rem;
+  background-color: #000000;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+  margin-top: 0.5rem;
 }
 
-/* input[type='text'],
-input[type='password'] {
-    border: 2px solid black;
-} */
-
-
+.disable {
+  outline: none !important;
+  border: 2.3px solid red;
+}

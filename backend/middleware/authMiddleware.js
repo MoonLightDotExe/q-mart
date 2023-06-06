@@ -16,6 +16,8 @@ const protect = asyncHandler(async (req, res, next) => {
     } catch (err) {
       throw new Error(err.message)
     }
+  } else {
+    throw new Error('Please Include Token')
   }
 })
 
