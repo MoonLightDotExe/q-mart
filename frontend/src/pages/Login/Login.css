@@ -43,10 +43,6 @@
     letter-spacing: .5px;
 }
 
-.apple-img {
-    filter: contrast(0.5);
-}
-
 .login-page__or {
     padding: .6rem;
     padding-bottom: 3.5rem;

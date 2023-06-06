@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
 import React, {useState} from 'react'
+import {FcGoogle} from 'react-icons/fc'
+import {BsApple} from 'react-icons/bs'
 
 import './Login.css'
 
@@ -56,11 +58,11 @@ function Login() {
 
       <div className='login-page__account'>
         <button id="google-button" >
-            <img className='google-img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/882px-Google_%22G%22_Logo.svg.png?20230305195327" alt="buttonpng" border="0" width="35" height="35" />
+            <FcGoogle size={40}/>
             <span className='google-text'>CONTINUE WITH GOOGLE</span>
         </button>
         <button id="apple-button" >
-            <img className='apple-img' src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="buttonpng" border="0" width="30" height="35" />
+            <BsApple size={36} color={'#333333'}/>
             <span className='apple-text'>CONTINUE WITH APPLE</span>
         </button>
       </div>
