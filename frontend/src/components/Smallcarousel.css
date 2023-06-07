@@ -1,0 +1,42 @@
+.smallcarousel {
+    display: flex;
+    max-width: 1175.25px;
+    
+  }
+  
+  .smallcarousel-container {
+    width: 1175.25px;
+    height: 211px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  
+  .small-div {
+    flex: 0 0 1137.6px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    scroll-snap-align: start;
+  }
+  
+  .img {
+    width: 250px;
+    height: 170px;
+  }
+  
+  .car-button {
+    border: none;
+    font-size: 1.2rem;
+    background-color: inherit;
+  }
+  
+  .car-button:hover {
+    cursor: pointer;
+  }
+  
+ 

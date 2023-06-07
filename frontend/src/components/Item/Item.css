@@ -7,6 +7,8 @@
 }
 .main{
     padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .title{
     font-size: 16px;
@@ -17,13 +19,13 @@
 }
 .Item-Selector{
     /* height: 887px; */
-    width: 812.5px;
+    width: 1175.25px;
 }
-.Item-Selector-Image{
+/* .Item-Selector-Image{
     display: grid;
   grid-template-columns: repeat(4, 1fr); 
   grid-gap: 20px ;
-  /* width: 100%; */
+  
   
 
 }
@@ -31,30 +33,6 @@
     width: 100%;
     height: auto;
     size: 100px;
-}
-/* .accordion-button{
-    padding: 30px 15px;
-   
-}
-.a{
-    
-    float: right;
-}
-.info{
-    height: 178px;
-    width: 560px;
-    padding: 0 14px;
-}
-.info p{
-    margin: 0 0 20px;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    letter-spacing: -.03em;
-}
-.info li{
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    letter-spacing: -.03em;
 } */
+
+

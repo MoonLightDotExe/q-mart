@@ -3,6 +3,8 @@ import './Item.css'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { GrFormAdd } from "react-icons/gr";
 import Accondion_button from '../Accordion_button';
+import Productdetails from '../Productdetails';
+import Smallcarousel from '../Smallcarousel';
 
 const ItemSelector = () => {
   const [show, setshow] = useState(false)
@@ -14,11 +16,12 @@ const ItemSelector = () => {
       <div className='Item-Selector'>
         <div className="title">
             VARIATIONS
-            <span dir='ltr'>(13)</span>
+            <span dir='ltr'>(8)</span>
         </div>
-        <div className="Item-Selector-Image">
+        <Smallcarousel/>
+        {/* <div className="Item-Selector-Image">
           
-            {/* // change anchor tag into Link tag// */}
+            
             <a href=''>
             <img src="images/img1.jpg"alt='/'></img>
             </a>
@@ -43,7 +46,7 @@ const ItemSelector = () => {
             <a href=''>
             <img src="images/img8.jpg"alt='/'></img>
             </a>
-        </div>
+        </div> */}
        <Accondion_button 
        title =" Materials And Care"
        aboutText="Q-Mart products are made with carefully selected materials. Please handle with care for longer product life."
@@ -72,7 +75,9 @@ const ItemSelector = () => {
        about2="Protect from direct light, heat and rain. Should it become wet, dry it immediately with a soft cloth"
        about3="The slip-on shoe is inspired by the skin of deadly snakes."/>
     </div>
+    <Productdetails/>
     </div>
+    
   )
 }
 
