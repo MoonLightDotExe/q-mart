@@ -8,6 +8,7 @@ import './Main.css'
 function Main() {
   return (
     <div className='mheader'>
+      Main
       <Mcarousel/>
     </div>
     
