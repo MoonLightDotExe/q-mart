@@ -1,14 +1,13 @@
 .login-page {
-
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70rem;
-    width: 40rem;
-    margin: auto;
-    padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70rem;
+  width: 40rem;
+  margin: auto;
+  padding: 10px;
 }
 
 .login-page__account {
@@ -24,25 +23,24 @@
 
 #google-button,
 #apple-button {
-
-    border: 3.5px solid #414040;
-    width: 90%;
-    line-height: 4.2rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: 600;
-    color: #333333;
-    background-color: white;
-    letter-spacing: 1px;
+  border: 3.5px solid #414040;
+  width: 90%;
+  line-height: 4.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: 600;
+  color: #333333;
+  background-color: white;
+  letter-spacing: 1px;
 }
 
 .login-page__header {
-    color: rgb(1, 1, 1);
-    font-size: x-large;
-    letter-spacing: .5px;
+  color: rgb(1, 1, 1);
+  font-size: x-large;
+  letter-spacing: 0.5px;
 
   border: 3.5px solid #414040;
   width: 100%;
@@ -62,7 +60,6 @@
   color: rgb(1, 1, 1);
   font-size: xx-large;
   letter-spacing: 0.5px;
-
 }
 
 .apple-img {
@@ -77,23 +74,22 @@
 }
 
 .login-page__text1 {
-
-    letter-spacing: 1.8px;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 3rem;
-    color: black;
+  letter-spacing: 1.8px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3rem;
+  color: black;
 }
 
 .login-page__text2,
 .login-page__text3 {
-    color: black;
-    letter-spacing: .3px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-top: 2rem;
-    padding: 2px;
+  color: black;
+  letter-spacing: 0.3px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  padding: 2px;
   letter-spacing: 1.5px;
   text-align: center;
   line-height: 4rem;
@@ -108,20 +104,18 @@
   font-weight: 400;
   margin-top: 2rem;
   padding: 2px;
-
 }
 
 .login-page__input1,
 .login-page__input2,
 .login-page__submit {
-
-    padding: 1.6rem;
-    margin: 1.3rem;
-    margin-left: 2rem;
-    width: 35rem;
-    border: 2.3px solid black;
-    letter-spacing: 2px;
-    font-size: 1.3rem;
+  padding: 1.6rem;
+  margin: 1.3rem;
+  margin-left: 2rem;
+  width: 35rem;
+  border: 2.3px solid black;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
 
   padding: 1.6rem;
   margin: 1.3rem;
@@ -129,7 +123,6 @@
   border: 2.3px solid black;
   letter-spacing: 2px;
   font-size: 1.3rem;
-
 }
 
 .login-page__submit {
@@ -142,8 +135,39 @@
   margin-top: 0.5rem;
 }
 
+.login-page__direct {
+  text-decoration: none;
+  color: #416d99;
+}
+
+.login-page__text3 {
+  padding-left: 9rem;
+  font-weight: 600;
+}
+
+/* input[type='text'],
+input[type='password'] {
+    border: 2px solid black;
+} */
+
+.disable:focus {
+  border: 1px solid black;
+  outline: none !important;
+  box-shadow: #000000;
+}
+
+.disable {
+  border: 2.3px solid red;
+  outline: none !important;
+}
+
+.login-red,
+.login-red1 {
+  color: red !important;
+  margin-left: 2rem;
+}
+
 .disable {
   outline: none !important;
   border: 2.3px solid red;
 }
-
