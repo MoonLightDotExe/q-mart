@@ -1,5 +1,10 @@
+import { Link } from 'react-router-dom'
+import { useState, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+
+import userContext from '../../context/userContext'
+
 import './Register.css'
-import React from 'react'
 
 function Register() {
   const { success, registerUser } = useContext(userContext)
@@ -50,13 +55,60 @@ function Register() {
       navigate('/register')
     }
   }
-
   return (
-    <div>
-         <input className='login-page__input1' type="text" placeholder="NAME*" name="name" required/>
-         <input className='login-page__input2' type="text" placeholder="EMAIL*" name="email" required/>
-         <input className='login-page__input3' type="password" placeholder="PASSWORD*" name="pswrd" required/>
-         <input className='login-page__input4' type="password" placeholder="CONFIRM PASSWORD*" name="con_pswrd" required/>
+    <div className='register-page'>
+      <span className='register-page-title'>REGISTER HERE!</span>
+      <form onSubmit={handleSubmit}>
+        <input
+          className='register-pageinput1'
+          type='text'
+          placeholder='FULL NAME*'
+          name='name'
+          required
+        />
+        <input
+          className='register-pageinput2'
+          type='text'
+          placeholder='EMAIL'
+          name='email'
+          value={text}
+          onChange={handleEmail}
+          required
+        />
+        <input
+          className='register-pageinput3'
+          type='password'
+          placeholder='PASSWORD'
+          name='pswrd'
+          value={pass}
+          onChange={handlePass}
+          required
+        />
+        <input
+          className='register-pageinput4'
+          type='password'
+          placeholder='CONFIRM PASSWORD*'
+          name='con_pswrd'
+          required
+        />
+        <button
+          className='register-pagesubmit'
+          type='submit'
+        >
+          REGISTER
+        </button>
+      </form>
+      <span className='register-pagetext3'>
+        {' '}
+        Already have an account?{' '}
+        <Link
+          to='/login'
+          className='register-pagedirect'
+        >
+          {' '}
+          Login here{' '}
+        </Link>{' '}
+      </span>
     </div>
   )
 }

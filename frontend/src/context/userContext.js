@@ -5,7 +5,6 @@ const userContext = createContext()
 export const UserProvider = ({ children }) => {
   const [sidebar, setSidebar] = useState(false)
   const [success, setSuccess] = useState(false)
-  const [fail, setFail] = useState(false)
 
   const registerUser = async (name, email, pass) => {
     if (!name || !email || !pass) {

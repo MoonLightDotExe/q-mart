@@ -1,6 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import { Link } from 'react-router-dom'
-
 import { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -16,21 +13,6 @@ function Login() {
   const [pass, setPass] = useState()
   const [disable1, setDisable1] = useState(false)
   const [message1, setMessage1] = useState('')
-
-  const handleChange = (e) => {
-    if (text === '') {
-      setDisable(false)
-      setMessage(null)
-    } else if (text !== '' && e.target.value.length <= 10) {
-      setDisable(true)
-      setMessage('Please enter a valid email address')
-    } else {
-      setDisable(false)
-      setMessage(null)
-    }
-
-    setText(e.target.value)
-  }
 
   const handleEmail = (e) => {
     if (text === '') {
@@ -75,9 +57,7 @@ function Login() {
 
   return (
     <div className={`login-page ${sidebar ? `blur` : ``}`}>
-      <span className='login-page__header'>
-        <h1>MY Q-MART ACCOUNT</h1>
-      </span>
+      <h1 className='login-page__header'>MY Q-MART ACCOUNT</h1>
 
       <div className='login-page__account'>
         <button id='google-button'>
@@ -106,7 +86,7 @@ function Login() {
 
       <span className='login-page__or'>OR</span>
 
-      <form action=''>
+      <form onSubmit={handleSubmit}>
         <div className='headingsContainer'>
           <h3 className='login-page__text1'>
             CONTINUE WITH YOUR EMAIL ADDRESS
@@ -118,19 +98,17 @@ function Login() {
           </p>
         </div>
         <div class='mainContainer'>
-          {/* <label for="username">Your username</label>            */}
           <input
             className={`login-page__input1 ${disable ? `disable` : ``}`}
             type='text'
             placeholder='EMAIL*'
             name='email'
             value={text}
-            onChange={handleChange}
+            onChange={handleEmail}
             required
           />
           {disable && <div className='login-red'>{message}</div>}
 
-          {/* <label for="pswrd">Your password</label> */}
           <input
             className={`login-page__input2 ${disable1 ? `disable` : ``}`}
             type='password'
@@ -141,49 +119,12 @@ function Login() {
             required
           />
           {disable1 && <div className='login-red1'>{message1}</div>}
-
-          <p className='login-page__text2'>
-            Sign in with your Q-MART email and password or create a profile if
-            you are new.
-          </p>
         </div>
-        <div className='mainContainer'>
-          <input
-            className={`login-page__input1 ${disable ? `disable` : ``}`}
-            type='text'
-            placeholder='EMAIL*'
-            name='email'
-            value={text}
-            onChange={handleChange}
-            required
-          />
-
-          <span className='login-page__text3'>
-            {' '}
-            Not a member?{' '}
-            <Link
-              to='/register'
-              className='login-page__direct'
-            >
-              {' '}
-              Register now{' '}
-            </Link>{' '}
-          </span>
-
-          <input
-            className='login-page__input2'
-            type='password'
-            placeholder='PASSWORD*'
-            name='pswrd'
-            required
-          />
-        </div>
-        <br />
         <button
-          className='login-page__submit'
           type='submit'
+          className='login-page__submit'
         >
-          CONTINUE
+          SUBMIT
         </button>
       </form>
     </div>
