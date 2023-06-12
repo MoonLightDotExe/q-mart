@@ -10,6 +10,10 @@ const {
 
 router.post('/register', registerController)
 
-router.post('/login', protect, loginController)
+router.post('/login', loginController)
+
+router.get('/hi', protect, (req, res) => {
+  res.send('HELLO')
+})
 
 module.exports = router
