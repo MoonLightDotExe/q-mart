@@ -1,0 +1,49 @@
+.flip-container {
+    border: 1px solid lightgrey;
+    width: 25rem;
+    height: 30rem;
+}
+
+.heart-div {
+    height: 1rem;
+    margin: 5px;
+}
+
+.heart-btn {
+    border: none;
+    background: inherit;
+    float: right;
+    cursor: pointer;
+}
+
+/* .flip-image {
+    background-image: url('https://m.media-amazon.com/images/I/61Iu59wDmcS._UY675_.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 20rem;
+    height: 20rem;
+    margin-left: 40px;
+}
+
+.flip-container:hover .flip-image {
+    background-image: url('https://m.media-amazon.com/images/I/81DpBQNqk+L._UY675_.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: cover;
+    width: 20rem;
+    height: 20rem;
+} */
+
+.flip-text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.flip-shop {
+    color: black;
+}
