@@ -1,3 +1,4 @@
+
 .login-page {
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -161,3 +162,4 @@ input[type='password'] {
   outline: none !important;
   border: 2.3px solid red;
 }
+

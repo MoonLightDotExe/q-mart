@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
@@ -12,29 +13,15 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <Navbar />
-
       <Routes>
-        <Route
-          path='/'
-          element={<Login />}
-        ></Route>
-        <Route
-          path='/login'
-          element={<Login />}
-        ></Route>
-        <Route
-          path='/register'
-          element={<Register />}
-        ></Route>
-        <Route
-          path='/*'
-          element={<NotFound />}
-        ></Route>
+        <Route path="/login" Component={Login} element={<Login />} />
+        <Route path="/Main" Component={Main} element={<Main />} />
+        <Route path="/register" Component={Register} element={<Register />} />
       </Routes>
-      <Footer />
     </Router>
-  )
+  );
 }
 
 export default App
+
+// git pull origin master
