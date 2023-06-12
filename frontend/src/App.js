@@ -1,8 +1,12 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login/Login';
-import Main from './pages/Main/Main';
-import Register from './pages/Register/Register';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import Navbar from './components/Navbar'
+import Login from './pages/Login/Login'
+import Register from './pages/Register/Register'
+import Footer from './components/Footer/Footer.jsx'
+
+import NotFound from './pages/NotFound/NotFound'
 
 import './App.css'
 
