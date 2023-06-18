@@ -6,6 +6,7 @@ import {AiOutlineUser } from 'react-icons/ai';
 import { BiSearch } from 'react-icons/bi';  
 import { AiOutlineShopping  } from "react-icons/ai";
 import {AiOutlineBars} from "react-icons/ai";
+import Shop from './Shop/Shop';
 function Navbar() {
   return (
     <div className="container">
@@ -21,11 +22,12 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/Shop">
             <AiOutlineShopping 
             size = {24}
             style={{ color: 'black' }}/> 
           </a>
+         
         </li>
         <li>
           <a href="/">
