@@ -1,18 +1,11 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Mcarousel from '../../components/Mcarousel/Mcarousel'
-import {Data} from '../../data/mCarousel'
-import 'bootstrap/dist/css/bootstrap.css';
-// import { Link } from 'react-router-dom';
+import { Data } from '../../data/mCarousel'
 
 import './Main.css'
 
-function Main() {
-  return (
-    <>
-       <Mcarousel slides={Data}/> 
-
-    </>  
-  )
+const Main = () => {
+  return <div className='da'>hi</div>
 }
 
 export default Main

@@ -31,7 +31,9 @@ function Navbar() {
   return (
     <>
       <div
-        className={`container ${scroll ? `fix` : ``} ${sidebar ? `blur` : ``}`}
+        className={`container-nav ${scroll ? `fix` : ``} ${
+          sidebar ? `blur` : ``
+        }`}
       >
         <div className='contact'>contact us</div>
         <div className='Nav'>Q-Mart</div>

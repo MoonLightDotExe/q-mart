@@ -1,6 +1,7 @@
-
 import { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Mcarousel from '../../components/Mcarousel/Mcarousel'
+import { Data } from '../../data/mCarousel'
 
 import userContext from '../../context/userContext'
 
@@ -59,7 +60,6 @@ function Login() {
   return (
     <div className={`login-page ${sidebar ? `blur` : ``}`}>
       <h1 className='login-page__header'>MY Q-MART ACCOUNT</h1>
-
       <div className='login-page__account'>
         <button id='google-button'>
           <img
@@ -84,9 +84,7 @@ function Login() {
           <span className='apple-text'>CONTINUE WITH APPLE</span>
         </button>
       </div>
-
       <span className='login-page__or'>OR</span>
-
       <form onSubmit={handleSubmit}>
         <div className='headingsContainer'>
           <h3 className='login-page__text1'>
@@ -133,4 +131,3 @@ function Login() {
 }
 
 export default Login
-

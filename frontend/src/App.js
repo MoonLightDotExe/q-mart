@@ -1,27 +1,48 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Footer from './components/Footer/Footer.jsx'
-
+import Main from './components/Main/Main.jsx'
+import Mcarousel from './components/Mcarousel/Mcarousel'
+import { Data } from './data/mCarousel'
 import NotFound from './pages/NotFound/NotFound'
+import Checkout from './pages/Checkout/Checkout'
 
 import './App.css'
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
-        <Route path="/login" Component={Login} element={<Login />} />
-        <Route path="/Main" Component={Main} element={<Main />} />
-        <Route path="/register" Component={Register} element={<Register />} />
+        <Route
+          path='/'
+          Component={Login}
+          element={<Login />}
+        />
+        <Route
+          path='/main'
+          element={<Mcarousel slides={Data} />}
+        />
+        <Route
+          path='/register'
+          Component={Register}
+          element={<Register />}
+        />
+        <Route
+          path='/checkout'
+          element={<Checkout />}
+        />
+        <Route
+          path='/*'
+          element={<NotFound />}
+        />
       </Routes>
+      <Footer />
     </Router>
-  );
+  )
 }
 
 export default App
-
-// git pull origin master
