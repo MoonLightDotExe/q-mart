@@ -1,0 +1,49 @@
+.userCard {
+  width: 30rem;
+  border: 1px solid #000;
+  border-radius: 1.2rem;
+  /* background: red; */
+  padding: 1rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.userCard-hover {
+  background-color: #ebebeb;
+  transition: all 0.4s;
+}
+
+.userCard-icon {
+  font-size: 5rem;
+  transition: all 0.4s;
+}
+
+.userCard-text {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.userCard-text-primary {
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+
+.userCard-text-secondary {
+  font-size: 1.3rem;
+  padding: 0.2rem;
+}
+
+.hover-true {
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.icon-hover {
+  filter: blur(0.4rem);
+  transition: all 0.4s;
+}

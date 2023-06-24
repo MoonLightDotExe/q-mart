@@ -17,6 +17,7 @@
   width: 100%;
   margin: 0;
   height: 10vh;
+  transition: all 1s;
 }
 .menu {
   display: flex;
@@ -92,6 +93,7 @@
   transition: width 0.8s ease-in-out;
   overflow: hidden;
   position: fixed;
+  border-left: 1px solid #000;
 }
 
 .sidebar.active {

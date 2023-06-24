@@ -4,11 +4,12 @@ import Navbar from './components/Navbar'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Footer from './components/Footer/Footer.jsx'
-import Main from './components/Main/Main.jsx'
 import Mcarousel from './components/Mcarousel/Mcarousel'
 import { Data } from './data/mCarousel'
 import NotFound from './pages/NotFound/NotFound'
 import Checkout from './pages/Checkout/Checkout'
+import User from './pages/User/User'
+import Admin from './pages/Admin/Admin'
 
 import './App.css'
 
@@ -34,6 +35,14 @@ function App() {
         <Route
           path='/checkout'
           element={<Checkout />}
+        />
+        <Route
+          path='/user'
+          element={<User />}
+        />
+        <Route
+          path='/admin'
+          element={<Admin />}
         />
         <Route
           path='/*'
