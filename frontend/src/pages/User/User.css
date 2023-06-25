@@ -9,7 +9,7 @@
   font-weight: 500;
   width: 80%;
   height: 40%;
-  /* background: red; */
+  /* background: #36aeff; */
   position: absolute;
   top: 10%;
   left: 10%;
@@ -17,7 +17,17 @@
 
 .user-options {
   display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  grid-gap: 2rem;
   padding: 3rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .user-options {
+    display: grid;
+    grid-template-columns: 30rem 30rem;
+    grid-gap: 2rem;
+  }
 }
 
 .user-option-item {

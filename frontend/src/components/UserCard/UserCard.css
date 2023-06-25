@@ -1,11 +1,11 @@
 .userCard {
-  width: 30rem;
-  border: 1px solid #000;
+  width: 29rem;
+  height: 9rem;
+  border: 1px solid #b1b1b1;
   border-radius: 1.2rem;
   /* background: red; */
   padding: 1rem;
   display: flex;
-  gap: 5rem;
   justify-content: center;
   align-items: center;
   cursor: pointer;
